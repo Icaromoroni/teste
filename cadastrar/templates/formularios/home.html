@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Tarefas{% endblock %}
+
+{% block content %}
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Links</h3>
+      <p>Escolha a opção abaixo.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="cadastrar/">Cadastrar-se</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Negociar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Atualizar Coordenadas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sinalizar Infectado</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>NÃO FUGIREMOS MAIS</h2>
+      <h5>Não fugiremos mais, 26 de janeiro, 2237</h5>
+      <div class="fakeimg">imagem representativa</div>
+      <p>Vamos nos unir..</p>
+      <p>Estamos vivendo momentos dificéis, mas há um meio para nos comunicar entre povoados, negociar, atualizar localização 
+        e identificar pessoas contaminadas aumentando a segurança dos sobreviventes</p>
+      <br>
+      <h2>TODOS CONTRA O VÍRUS</h2>
+      <h5>Todos contra o vírus, 26 de janeiro, 2237</h5>
+      <div class="banner2">imagem representativa</div>
+      <p>Não insista em lutar sozinho..</p>
+      <p>Desenvemos essa aplicação para nos unir contra essa vírus juntos. Será necessario fazer o cadastro de todos os sobreviventes adultos, jovens e crianças.</p>
+      <p>Faça o cadastros no link: <a href="#">Cadastrar-se</a><abbr title="Cadastrar-se"><strong>*</strong></abbr></p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

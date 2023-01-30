@@ -1,0 +1,18 @@
+
+h1{
+    color: blue;
+}
+
+.fakeimg {
+    
+    height: 200px;
+    background-image: url(img/fulga_zumbi.jpg);
+
+
+}
+.banner2 {
+    
+    height: 200px;
+    background-image: url(img/grupo_de_resistencia.jpg);
+
+}
