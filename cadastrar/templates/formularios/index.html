@@ -3,10 +3,55 @@
 {% block title %}Cadastrar{% endblock %}
 
 {% block content %}
+{% load widget_tweaks %}
 <form method="POST">
     <h1>Cadastro</h1>
     {% csrf_token %}
-    {{ form }}
+    <!-- Nome -->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Nome</span></div>
+        {% render_field form.nome class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Idade</span></div>
+        {% render_field form.idade class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Sexo</span></div>
+        {% render_field form.sexo class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Latitude</span></div>
+        {% render_field form.latitude class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Longitude</span></div>
+        {% render_field form.longitude class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Água</span></div>
+        {% render_field itensForm.agua class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Alimento</span></div>
+        {% render_field itensForm.alimento class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Medicamento</span></div>
+        {% render_field itensForm.medicamento class+="form-control" %}
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Munição</span></div>
+        {% render_field itensForm.municao class+="form-control" %}
+    </div>
     <input type="submit" class="btn btn-success" value="Submit Button">
     <a href="/"><button type="button" class="btn btn-danger">Voltar</button></button></a>
 </form>
