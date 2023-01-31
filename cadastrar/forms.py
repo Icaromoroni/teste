@@ -9,3 +9,5 @@ class CadastroForms(forms.Form):
     latitude = forms.IntegerField(label='latitude')
     longitude = forms.IntegerField(label='latitude')
 
+class Itens(forms.Form):
+    pass
