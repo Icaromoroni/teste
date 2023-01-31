@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Cadastros,Itens,Inventario
+
+admin.site.register(Cadastros)
+admin.site.register(Itens)
+admin.site.register(Inventario)
