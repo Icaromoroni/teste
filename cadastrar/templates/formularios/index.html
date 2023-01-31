@@ -4,40 +4,46 @@
 
 {% block content %}
 {% load widget_tweaks %}
-<form method="POST">
-    <h1>Cadastro</h1>
-    {% csrf_token %}
-    <!-- Nome -->
-    <div class="input-group mb-3">
-        <div class="input-group-prepend"><span class="input-group-text">Nome</span></div>
-        {% render_field form.nome class+="form-control" %}
-    </div>
+<div class="container c_central">
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <div class="row ">
+        <form method="POST">
+            {% csrf_token %}
+            <!-- Nome -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend"><span class="input-group-text">Nome</span></div>
+                {% render_field form.nome class+="form-control" %}
+            </div>
 
-    <!-- idade -->
-    <div class="input-group mb-3">
-        <div class="input-group-prepend"><span class="input-group-text">Idade</span></div>
-        {% render_field form.idade class+="form-control" %}
-    </div>
+            <!-- idade -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend"><span class="input-group-text">Idade</span></div>
+                {% render_field form.idade class+="form-control" %}
+            </div>
 
-    <!-- sexo -->
-    <div class="input-group mb-3">
-        <div class="input-group-prepend"><span class="input-group-text">Sexo</span></div>
-        {% render_field form.sexo class+="form-control" %}
-    </div>
+            <!-- sexo -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend"><span class="input-group-text">Sexo</span></div>
+                {% render_field form.sexo class+="form-control" %}
+            </div>
 
-    <!-- latitude -->
-    <div class="input-group mb-3">
-        <div class="input-group-prepend"><span class="input-group-text">Latitude</span></div>
-        {% render_field form.latitude class+="form-control" %}
-    </div>
+            <!-- latitude -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend"><span class="input-group-text">Latitude</span></div>
+                {% render_field form.latitude class+="form-control" %}
+            </div>
 
-    <!-- longitude -->
-    <div class="input-group mb-3">
-        <div class="input-group-prepend"><span class="input-group-text">Longitude</span></div>
-        {% render_field form.longitude class+="form-control" %}
-    </div>
+            <!-- longitude -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend"><span class="input-group-text">Longitude</span></div>
+                {% render_field form.longitude class+="form-control" %}
+            </div>
 
-    <input type="submit" class="btn btn-success" value="Submit Button">
-    <a href="/"><button type="button" class="btn btn-danger">Voltar</button></button></a>
-</form>
+            <input type="submit" class="btn btn-success" value="Submit Button">
+            <a href="/"><button type="button" class="btn btn-danger">Voltar</button></a>
+        </form>
+    </div>
+</div>
 {% endblock %}

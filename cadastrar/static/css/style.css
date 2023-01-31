@@ -1,7 +1,4 @@
 
-h1{
-    color: blue;
-}
 
 .fakeimg {
     
@@ -15,4 +12,13 @@ h1{
     height: 200px;
     background-image: url(img/grupo_de_resistencia.jpg);
 
+}
+
+ul.messeges{
+    padding: 0;
+
+}
+ul.messeges{
+    list-style: none;
+    
 }
