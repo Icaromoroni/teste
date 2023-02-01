@@ -37,3 +37,5 @@ $ cd teste
 # Executa com o comando
 $ python3 manage.py runserver
 ```
+<h3 name='modelo'>Modelo do Banco de Dados</h3><br>
+<img alt="Results" title="modeloBanco" src=".github/modelo_banco_db.png" width="500px"/>
