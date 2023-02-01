@@ -22,3 +22,21 @@ ul.messeges{
     list-style: none;
     
 }
+
+/* container*/
+.c-borda{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+/* cabecalho, botões*/
+.central, header{
+    text-align: center;
+}
+
+/*meio*/
+.m-borda{
+    border-left: 1px inset gray;
+    border-right: 1px inset gray;
+    border-bottom: 1px inset gray;
+}

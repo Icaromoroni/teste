@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Cadastro Realizado{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <!-- id do sobrevivente-->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">id__do</span></div>
+        {% render_field form.nome class+="form-control" %}
+    </div>
+
+    <!-- idade -->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Idade</span></div>
+        {% render_field form.idade class+="form-control" %}
+    </div>
+
+    <!-- sexo -->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend"><span class="input-group-text">Sexo</span></div>
+        {% render_field form.sexo class+="form-control" %}
+    </div>
+
+
+
+{% endblock %}

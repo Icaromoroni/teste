@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Cadastros, Inventario
+from .models import Cadastros, Inventario, Itens
 
 SEXO = (('M','Masculino'), ('F', 'Feminino'))
 
@@ -22,10 +22,25 @@ class CadastroForms(forms.ModelForm):
 
         fields = ['nome', 'idade', 'sexo', 'latitude', 'longitude']
 
+class ItemForm(forms.ModelForm):
+
+    class Meta:
+        model = Itens
+
+        fields = ['nome']
+
 class InventarioForm(forms.ModelForm):
 
     class Meta:
 
         model = Inventario
 
-        fields = '__all__'
+        fields = ['quantidade']
+
+class Coordenadas(forms.ModelForm):
+
+    class Meta:
+
+        model = Cadastros
+
+        fields = ['latitude', 'longitude']

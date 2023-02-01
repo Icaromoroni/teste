@@ -3,21 +3,23 @@
 {% block title %}Cadastro Realizado{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="main">
-    <header class="row">
-        <h1>Cadastro Realizado com sucesso!</h1>
-        
+<div class="container c-borda">
+    <div class="main main m-borda">
+    <header class="bg-dark text-white">
+        <h3>Cadastro Realizado!</h3>        
     </header>
-    <div class="main">
-        <h3>Nome: {{sobreviventeViews.nome}}</h3>
-        <p>ID: {{sobreviventeViews.id}}</p>
-        <p>Idade: {{sobreviventeViews.idade}}</p>
-        <p>Sexo: {{sobreviventeViews.sexo}}</p>
-        <p>latitude: {{sobreviventeViews.latitude}}</p>
-        <p>longitude: {{sobreviventeViews.longitude}}</p>
-        <p>infectado: {{sobreviventeViews.status_infectado}}</p>
-        <a href="/"><button type="button" class="btn btn-danger">Voltar</button></a>
+    <div class="main central">
+        <h3>Anote suas informações</h3><hr>
+        <h3>Nome: {{sobrevivente.nome}}</h3>
+        <p>ID: {{sobrevivente.id}}</p>
+        <p>Idade: {{sobrevivente.idade}}</p>
+        <p>Sexo: {{sobrevivente.sexo}}</p>
+        <p>latitude: {{sobrevivente.latitude}}</p>
+        <p>longitude: {{sobrevivente.longitude}}</p>
+        <p>infectado: {{sobrevivente.status_infectado}}</p>
+        <div class="central">
+            <a href="/"><button type="button" class="btn btn-danger">Voltar</button></a>
+        </div>
     </div>
     </div>
 </div>

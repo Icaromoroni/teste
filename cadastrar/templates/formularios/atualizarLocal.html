@@ -1,34 +1,16 @@
 {% extends 'base.html' %}
 
-{% block title %}Cadastrar{% endblock %}
+{% block title %}Atualizar Coordenadas{% endblock %}
 
 {% block content %}
 {% load widget_tweaks %}
 <div class="container c-borda">
-    <div class="main m-borda">
+    <div class="main main m-borda">
         <header class="bg-dark text-white">
-            <h3>Cadastro de Sobreviventes</h3>
+            <h3>Atualizar coordenadas</h3>        
         </header>
         <form method="POST">
             {% csrf_token %}
-            <!-- Nome -->
-            <div class="input-group mb-3">
-                <div class="input-group-prepend"><span class="input-group-text">Nome</span></div>
-                {% render_field form.nome class+="form-control" %}
-            </div>
-
-            <!-- idade -->
-            <div class="input-group mb-3">
-                <div class="input-group-prepend"><span class="input-group-text">Idade</span></div>
-                {% render_field form.idade class+="form-control" %}
-            </div>
-
-            <!-- sexo -->
-            <div class="input-group mb-3">
-                <div class="input-group-prepend"><span class="input-group-text">Sexo</span></div>
-                {% render_field form.sexo class+="form-control" %}
-            </div>
-
             <!-- latitude -->
             <div class="input-group mb-3">
                 <div class="input-group-prepend"><span class="input-group-text">Latitude</span></div>
