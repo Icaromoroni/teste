@@ -34,3 +34,6 @@ $ sudo pip3 install django
 $ git clone https://github.com/Icaromoroni/teste.git
 # Vá até a pasta principal
 $ cd teste
+# Executa com o comando
+$ python3 manage.py runserver
+```
